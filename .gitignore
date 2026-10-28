@@ -1,0 +1,22 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+backend_ci.tf
+.terraform.lock.hcl.bak
+
+# Secrets / env
+.env
+*.pem
+
+# OS / editor
+.DS_Store
+.vscode/
+node_modules/
