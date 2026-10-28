@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1 id="app-title">Student Task Manager</h1>
+      <span id="env-badge" class="badge"></span>
+    </header>
+
+    <form id="task-form" class="card">
+      <input id="title" type="text" placeholder="Task title, e.g. Submit Cloud Computing Assignment" required />
+      <select id="priority">
+        <option>High</option>
+        <option selected>Medium</option>
+        <option>Low</option>
+      </select>
+      <select id="status">
+        <option selected>Pending</option>
+        <option>In Progress</option>
+        <option>Completed</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <p id="message" role="status"></p>
+
+    <div class="card table-wrap">
+      <table>
+        <thead>
+          <tr><th>ID</th><th>Task</th><th>Priority</th><th>Status</th><th>Created</th><th>Actions</th></tr>
+        </thead>
+        <tbody id="task-body"></tbody>
+      </table>
+      <p id="empty" class="empty" hidden>No tasks yet. Add your first one above.</p>
+    </div>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
