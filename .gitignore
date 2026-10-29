@@ -11,7 +11,12 @@ override.tf.json
 *_override.tf
 backend_ci.tf
 .terraform.lock.hcl.bak
-
+*.txt
+terraform.tfvars
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
 # Secrets / env
 .env
 *.pem
